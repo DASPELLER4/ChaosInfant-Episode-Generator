@@ -1,5 +1,7 @@
-# ChaosInfant-Episode-Generator
+# ChaosInfant Episode Generator
 A generator for the chaosinfant series I run on my youtube channel also entitled DASPELLER4, they are simple videos with two or more stationary characters on a backdrop of my choice that I can change at any time. It takes in script files of what you want the characters to say and what the scene is, it uses the tettys sapi4 tts api
+
+<a href="https://www.youtube.com/playlist?list=PLWRjq42wIAAA0qxTobCanQzH7b-V8rghK">My videos made with this</a>
 
 ## Script.txt
 The script.txt file is to be formatted like this:
