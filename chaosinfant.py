@@ -112,9 +112,13 @@ def scriptReader(script,out):
                 character = x.split(" ")[0][1:].replace("]",'')
                 out.setCharacter(character)
                 out.addLine(x.split(']')[1][1:])
-
-characters = {'Linus':['Sam','/home/stan/Documents/chaosinfantgoodman.png'],'Child':['Adult Male #2, American English (TruVoice)','/home/stan/Documents/charchaoschild.png']}
-scenes = {'Store':'store.png','Blank':'white.png','Building':'building.png'}
+try:
+    os.mkdir("voicelines")
+    os.mkdir("clips")
+except:
+    pass
+characters = {} # the characters are stored as such, character name is the key and the value is a list of [tettys voice, file location] you can see a list of the different voices on https://tetyys.com/SAPI4/ under the Select voice dropdown
+scenes = {} # write the scenes you have, it is a dictionary so the key is the name of the scene and the value is the file location of the scene image
 script = Script(characters,scenes)
 fileToOpen = "script.txt"
 content = ""
